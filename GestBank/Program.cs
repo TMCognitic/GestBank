@@ -33,16 +33,3 @@ Console.WriteLine(courant.Solde);
 comptes.Add(courant);
 comptes.Add(courant2);
 
-
-double total = 0;
-
-foreach (Courant c in comptes)
-{
-    if (c.Solde > 0)
-        total += c;
-}
-
-Console.WriteLine(total);
-
-Console.WriteLine(courant + courant2);
-
