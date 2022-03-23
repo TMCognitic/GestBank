@@ -2,8 +2,6 @@
 
 using Models;
 
-List<Courant> comptes = new List<Courant>();
-
 Personne personne = new Personne()
 {
     Nom = "Person",
@@ -18,18 +16,16 @@ Courant courant = new Courant()
     LigneDeCredit = 500
 };
 
-Courant courant2 = new Courant()
+Epargne epargne = new Epargne()
 {
     Numero = "000002",
     Titulaire = personne,
-    LigneDeCredit = 500
 };
 
 courant.Depot(500);
-courant2.Depot(500);
+epargne.Depot(500);
 courant.Retrait(700);
+epargne.Retrait(100);
 Console.WriteLine(courant.Solde);
 
-comptes.Add(courant);
-comptes.Add(courant2);
 
